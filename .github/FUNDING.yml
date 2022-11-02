@@ -1,4 +1,11 @@
-# These are supported funding model platforms
-open_collective: prismarinejs
-custom: https://rysolv.com/repos/detail/74691b23-938d-4b2f-b65a-5c47bf5b3f0f
-github: PrismarineJS
+mineflayer = require('mineflayer')
+
+const options = {
+  host: 'game2.falixserver.net', // Change this to the ip you want.
+  port: 27493 // Change this to the port you want.
+}
+setInterval(function() {
+    const bot = mineflayer.createBot(options)
+
+}, 60 * 1000);                                    
+// 60 * 1000 milsec
